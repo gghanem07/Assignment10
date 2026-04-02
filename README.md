@@ -1,6 +1,25 @@
 # 📦 Project Setup
 
 ---
+# Assignment 10 - FastAPI Secure User Model
+
+## Overview
+This project implements a secure user model using FastAPI, SQLAlchemy, and Pydantic.  
+It includes password hashing, user validation, integration testing, and a full CI/CD pipeline using GitHub Actions and Docker Hub.
+
+## Features
+- SQLAlchemy User model with unique username and email
+- Password hashing and verification
+- Pydantic schemas for validation (UserCreate, UserRead)
+- Unit and integration tests using pytest
+- CI/CD pipeline with GitHub Actions
+- Docker image build and deployment to Docker Hub
+
+
+## How to Run Tests Locally
+```bash
+pytest
+
 
 # 🧩 1. Install Homebrew (Mac Only)
 
@@ -262,3 +281,19 @@ Then submit the GitHub repository link as instructed.
 - [Python Downloads](https://www.python.org/downloads/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [GitHub SSH Setup Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+
+Docker Hub Repository
+---------------------
+
+https://hub.docker.com/repository/docker/gghanem07/assignment10
+
+CI/CD Pipeline
+--------------
+
+The GitHub Actions workflow automatically:
+
+- Runs unit and integration tests
+- Performs security scanning with Trivy
+- Builds the Docker image
+- Pushes the image to Docker Hub
