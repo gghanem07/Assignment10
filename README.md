@@ -297,3 +297,12 @@ The GitHub Actions workflow automatically:
 - Performs security scanning with Trivy
 - Builds the Docker image
 - Pushes the image to Docker Hub
+
+
+## Screenshots
+
+### GitHub Actions Workflow
+![GitHub Actions](screenshots/GitHub_Actions.png)
+
+### Docker Hub Deployment
+![Docker Hub](screenshots/Docker_Hub.png)
